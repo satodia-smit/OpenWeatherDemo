@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobiQuity Demo</string>
+    <string name="err_no_internet">No internet connection found.</string>
+    <string name="lbl_search_to_get_started">Search to get started</string>
+    <string name="lbl_help">Help</string>
+    <string name="lbl_msg_map">Long click and drag the then release</string>
+    <string name="lbl_err_msg">Error in fetching city</string>
+
+</resources>

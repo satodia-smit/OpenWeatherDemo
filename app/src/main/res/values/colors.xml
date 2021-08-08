@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#791551</color>
+    <color name="colorPrimaryDark">#5C0A3C</color>
+    <color name="colorAccent">#10C200</color>
+    <color name="hibiscus">#BC3476</color>
+    <color name="semiTransparentColor">#BDFFFFFF</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+</resources>

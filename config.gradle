@@ -1,0 +1,11 @@
+gradle.properties
+
+ext {
+    APP_NAME = "Mobiquity's Demo"
+    APPLICATION_ID = "com.thehyper.coder"
+
+    BASE_URL = "https://api.openweathermap.org/data/2.5/"
+    ENDPOINT = BASE_URL // Developer
+
+    API_KEY = "f6f301931aa315039e44ec2e4147aca5"
+}

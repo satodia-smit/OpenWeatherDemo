@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentCityList">
+    <fragment
+        android:id="@+id/fragmentCityList"
+        android:name="com.hyperelement.mvvmdemo.ui.fragment.city.FragmentCityList"
+        android:label="FragmentCityList" >
+        <action
+            android:id="@+id/action_fragmentCityList_to_fragmentCitySelection"
+            app:destination="@id/fragmentCitySelection" />
+        <action
+            android:id="@+id/action_fragmentCityList_to_fragmentWeather"
+            app:destination="@id/fragmentWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCitySelection"
+        android:name="com.hyperelement.mvvmdemo.ui.fragment.city.FragmentCitySelection"
+        android:label="FragmentCitySelection" />
+    <fragment
+        android:id="@+id/fragmentWeather"
+        android:name="com.hyperelement.mvvmdemo.ui.fragment.weather.FragmentWeather"
+        android:label="FragmentWeather" >
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.hyperelement.mvvmdemo.ui.activity.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/fragmentHelp"
+        android:name="com.hyperelement.mvvmdemo.ui.fragment.help.FragmentHelp"
+        android:label="FragmentHelp" />
+</navigation>
