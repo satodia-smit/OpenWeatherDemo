@@ -27,9 +27,9 @@ class FragmentCitySelection :
     val viewModel1 by viewModel<CityVM>()
 
     private val callback = OnMapReadyCallback { googleMap ->
-        val sydney = LatLng(23.022505, 72.571365)
+        val location = LatLng(23.022505, 72.571365)
         googleMap.addMarker(
-            MarkerOptions().position(sydney).title("Marker in Sydney").draggable(true)
+            MarkerOptions().position(location).title("Location").draggable(true)
         )
 
         //handle the drag of marker
@@ -50,7 +50,7 @@ class FragmentCitySelection :
             }
         })
 
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10f));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 10f));
 
     }
 
